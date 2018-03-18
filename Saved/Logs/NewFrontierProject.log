@@ -364,3 +364,15 @@ LogInit: Object subsystem initialized
 [2018.03.18-22.15.07:472][410]LogSavePackage: Moving '../../../../../../Users/jjosh/Documents/GitHub/New-Frontier/Saved/TestLevel_BuiltDataCD7A2AF745502714B90DB9A78B17C742.tmp' to '../../../../../../Users/jjosh/Documents/GitHub/New-Frontier/Content/TestLevel_BuiltData.uasset'
 [2018.03.18-22.15.07:473][410]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/jjosh/Documents/GitHub/New-Frontier/Content/TestLevel_BuiltData.uasset
 [2018.03.18-22.15.07:483][410]LogFileHelpers: Saving map 'TestLevel' took 0.268
+[2018.03.18-22.15.55:974][844]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.03.18-22.47.46:056][130]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2018.03.18-22.47.52:732][527]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.03.18-22.47.55:874][712]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2018.03.18-22.48.00:884][  6]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestLevel" FILE="../../../../../../Users/jjosh/Documents/GitHub/New-Frontier/Content/TestLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.03.18-22.48.00:960][  6]LogSavePackage: Save=46.89ms
+[2018.03.18-22.48.00:960][  6]LogSavePackage: Moving '../../../../../../Users/jjosh/Documents/GitHub/New-Frontier/Saved/TestLevel1CA4354E4913EA63FBAE34A294C88D88.tmp' to '../../../../../../Users/jjosh/Documents/GitHub/New-Frontier/Content/TestLevel.umap'
+[2018.03.18-22.48.00:966][  6]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/jjosh/Documents/GitHub/New-Frontier/Content/TestLevel.umap
+[2018.03.18-22.48.01:026][  6]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestLevel_BuiltData" FILE="../../../../../../Users/jjosh/Documents/GitHub/New-Frontier/Content/TestLevel_BuiltData.uasset" SILENT=true
+[2018.03.18-22.48.01:057][  6]LogSavePackage: Save=20.92ms
+[2018.03.18-22.48.01:057][  6]LogSavePackage: Moving '../../../../../../Users/jjosh/Documents/GitHub/New-Frontier/Saved/TestLevel_BuiltData5416E9624B8944A5D73B2C9E98B12D73.tmp' to '../../../../../../Users/jjosh/Documents/GitHub/New-Frontier/Content/TestLevel_BuiltData.uasset'
+[2018.03.18-22.48.01:060][  6]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/jjosh/Documents/GitHub/New-Frontier/Content/TestLevel_BuiltData.uasset
