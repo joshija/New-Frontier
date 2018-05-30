@@ -1,18 +1,20 @@
-﻿Log file open, 05/27/18 22:56:51
+﻿Log file open, 05/30/18 16:39:10
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
+LogWindows: File 'VSPerf140.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi.dll' does not exist
 LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: NewFrontierProject
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(2135060356) SRandInit(2135060356).
+LogInit: Display: RandInit(482232206) SRandInit(482232206).
 LogInit: Read version file with build ID '3709383'
 LogInit: Overriding engine version to CL 3832480, compatible CL 3709383
 LogInit: Registered custom module enumerator with build ID '3709383'
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.171021
+LogStats: Stats thread started at 0.162311
 LogD3D11RHI: Aftermath initialized
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll (API version 3709383).
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2DEditor.dll (API version 3709383).
@@ -189,523 +191,947 @@ LogInit: Compiled (64-bit): Jan 12 2018 02:04:55
 LogInit: Compiled with Visual C++: 19.00.24215.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.18
-LogInit: Command line:  
+LogInit: Command line: -EpicPortal 
 LogInit: Base directory: C:/Program Files/Epic Games/UE_4.18/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2018.05.28-03.56.55:279][  0]LogInit: Selected Device Profile: [Windows]
-[2018.05.28-03.56.55:279][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.05.28-03.56.55:290][  0]LogInit: Computer: DESKTOP-9798TT2
-[2018.05.28-03.56.55:290][  0]LogInit: User: jakeb
-[2018.05.28-03.56.55:290][  0]LogInit: CPU Page size=4096, Cores=4
-[2018.05.28-03.56.55:290][  0]LogInit: High frequency timer resolution =3.515627 MHz
-[2018.05.28-03.56.55:291][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
-[2018.05.28-03.56.55:291][  0]LogMemory: Platform Memory Stats for Windows
-[2018.05.28-03.56.55:291][  0]LogMemory: Process Physical Memory: 280.44 MB used, 280.44 MB peak
-[2018.05.28-03.56.55:291][  0]LogMemory: Process Virtual Memory: 276.53 MB used, 276.53 MB peak
-[2018.05.28-03.56.55:291][  0]LogMemory: Physical Memory: 3790.63 MB used,  4355.52 MB free, 8146.14 MB total
-[2018.05.28-03.56.55:291][  0]LogMemory: Virtual Memory: 4833.57 MB used,  4355.52 MB free, 134217728.00 MB total
-[2018.05.28-03.56.55:449][  0]LogInit: Using OS detected language (en-US).
-[2018.05.28-03.56.55:449][  0]LogInit: Using OS detected locale (en-US).
-[2018.05.28-03.56.55:451][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2018.05.28-03.56.55:820][  0]LogInit: Setting process to per monitor DPI aware
-[2018.05.28-03.56.56:038][  0]LogD3D11RHI: D3D11 adapters:
-[2018.05.28-03.56.56:086][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
-[2018.05.28-03.56.56:086][  0]LogD3D11RHI:       8096/0/4073 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2018.05.28-03.56.56:087][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2018.05.28-03.56.56:087][  0]LogD3D11RHI:       0/0/4073 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2018.05.28-03.56.56:087][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.05.28-03.56.56:093][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.05.28-03.56.56:093][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
-[2018.05.28-03.56.56:093][  0]LogWindows: EnumDisplayDevices:
-[2018.05.28-03.56.56:093][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
-[2018.05.28-03.56.56:094][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2018.05.28-03.56.56:094][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2018.05.28-03.56.56:094][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2018.05.28-03.56.56:094][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2018.05.28-03.56.56:094][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
-[2018.05.28-03.56.56:094][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2018.05.28-03.56.56:094][  0]LogD3D11RHI:      Driver Date: Unknown
-[2018.05.28-03.56.56:094][  0]LogRHI: Texture pool is 5667 MB (70% of 8096 MB)
-[2018.05.28-03.56.56:119][  0]LogD3D11RHI: Async texture creation enabled
-[2018.05.28-03.56.56:134][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2018.05.28-03.56.56:182][  0]LogShaderCompilers: Guid format shader working directory is -13 characters bigger than the processId version (../../../../../../Users/jakeb/Documents/GitHub/New-Frontier/Intermediate/Shaders/WorkingDirectory/7008/).
-[2018.05.28-03.56.56:182][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/jakeb/AppData/Local/Temp/UnrealShaderWorkingDir/44B2ADE14F5579777BB5CCB45621CB7A/'.
-[2018.05.28-03.56.56:182][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2018.05.28-03.56.56:982][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2018.05.28-03.56.57:041][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2018.05.28-03.56.57:089][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2018.05.28-03.56.57:140][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2018.05.28-03.56.57:189][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2018.05.28-03.56.57:242][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2018.05.28-03.56.57:289][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.05.28-03.56.57:342][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2018.05.28-03.56.57:393][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2018.05.28-03.56.57:451][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
-[2018.05.28-03.56.57:510][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
-[2018.05.28-03.56.57:570][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
-[2018.05.28-03.56.57:618][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
-[2018.05.28-03.56.57:665][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
-[2018.05.28-03.56.57:767][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
-[2018.05.28-03.56.57:767][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
-[2018.05.28-03.56.57:820][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.05.28-03.56.57:861][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2018.05.28-03.56.57:958][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.05.28-03.56.57:984][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.05.28-03.56.58:037][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2018.05.28-03.56.58:089][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2018.05.28-03.56.58:142][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2018.05.28-03.56.58:188][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2018.05.28-03.56.58:188][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2018.05.28-03.56.58:631][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2018.05.28-03.56.58:708][  0]LogDerivedDataCache: Loaded boot cache 0.08s 78MB C:/Users/jakeb/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
-[2018.05.28-03.56.58:708][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/jakeb/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc
-[2018.05.28-03.56.58:708][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/jakeb/Documents/GitHub/New-Frontier/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.05.28-03.56.58:708][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.05.28-03.56.58:708][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/jakeb/Documents/GitHub/New-Frontier/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.05.28-03.56.58:708][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.05.28-03.56.58:722][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.05.28-03.56.58:734][  0]LogDerivedDataCache: Using Local data cache path C:/Users/jakeb/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.05.28-03.56.58:742][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.05.28-03.56.58:743][  0]LogSlate: Using Freetype 2.6.0
-[2018.05.28-03.56.58:743][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.05.28-03.56.58:743][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.05.28-03.56.59:038][  0]LogInit: Selected Device Profile: [Windows]
-[2018.05.28-03.56.59:356][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.05.28-03.56.59:393][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.05.28-03.56.59:394][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.05.28-03.56.59:394][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2018.05.28-03.56.59:394][  0]LogMeshReduction: No automatic mesh merging module available
-[2018.05.28-03.56.59:394][  0]LogMeshMerging: No automatic mesh merging module available
-[2018.05.28-03.56.59:421][  0]LogNetVersion: NewFrontierProject , NetCL: 3709383, EngineNetVer: 2, GameNetVer: 0 (Checksum: 729592610)
-[2018.05.28-03.56.59:580][  0]LogAssetRegistry: FAssetRegistry took 0.0245 seconds to start up
-[2018.05.28-03.57.00:033][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 2 prioritized culture(s) in 0.052547 seconds
-[2018.05.28-03.57.00:038][  0]LogUObjectArray: 35870 objects as part of root set at end of initial load.
-[2018.05.28-03.57.00:038][  0]LogUObjectAllocator: 7363696 out of 0 bytes used by permanent object pool.
-[2018.05.28-03.57.00:038][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.05.28-03.57.00:089][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2018.05.28-03.57.02:556][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.05.28-03.57.02:597][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.05.28-03.57.03:254][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2018.05.28-03.57.03:654][  0]SourceControl: Source control is disabled
-[2018.05.28-03.57.04:768][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.05.28-03.57.05:035][  0]LogOcInput: OculusInput pre-init called
-[2018.05.28-03.57.05:309][  0]LogEngine: Initializing Engine...
-[2018.05.28-03.57.05:310][  0]LogHMD: Oculus plugin initialized. Version: 4.18.3-3832480+++UE4+Release-4.18, OVRPlugin: 1.19.0
-[2018.05.28-03.57.05:556][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.05.28-03.57.05:556][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.05.28-03.57.05:673][  0]LogAIModule: Creating AISystem for world Untitled
-[2018.05.28-03.57.05:690][  0]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.05.28-03.57.05:720][  0]LogInit: FAudioDevice initialized.
-[2018.05.28-03.57.05:806][  0]LogDerivedDataCache: Saved boot cache 0.09s 78MB C:/Users/jakeb/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
-[2018.05.28-03.57.05:828][  0]LogInit: Texture streaming: Enabled
-[2018.05.28-03.57.05:922][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2018.05.28-03.57.06:042][  0]LogInit: Transaction tracking system initialized
-[2018.05.28-03.57.06:334][  0]BlueprintLog: New page: Editor Load
-[2018.05.28-03.57.07:173][  0]LocalizationService: Localization service is disabled
-[2018.05.28-03.57.07:869][  0]LogConsoleResponse: Display: 
-[2018.05.28-03.57.08:049][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2018.05.28-03.57.08:049][  0]LogCook: Display: Mobile HDR setting 1
-[2018.05.28-03.57.08:049][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2018.05.28-03.57.09:150][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jakeb/Documents/GitHub/New-Frontier/Content/' took 0.03s
-[2018.05.28-03.57.09:193][  0]Cmd: MAP LOAD FILE="../../../../../../Users/jakeb/Documents/GitHub/New-Frontier/Content/TestGridAttempt.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.05.28-03.57.09:193][  0]LightingResults: New page: Lighting Build
-[2018.05.28-03.57.09:235][  0]MapCheck: New page: Map Check
-[2018.05.28-03.57.09:236][  0]LightingResults: New page: Lighting Build
-[2018.05.28-03.57.16:516][  0]LogAIModule: Creating AISystem for world TestGridAttempt
-[2018.05.28-03.57.16:549][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.05.28-03.57.16:593][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.05.28-03.57.16:654][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 60.451ms to complete.
-[2018.05.28-03.57.16:654][  0]LogFileHelpers: Loading map 'TestGridAttempt' took 7.461
-[2018.05.28-03.57.16:789][  0]LogCollectionManager: Loaded 0 collections in 0.002351 seconds
-[2018.05.28-03.57.16:865][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jakeb/Documents/GitHub/New-Frontier/Saved/Collections/' took 0.01s
-[2018.05.28-03.57.16:865][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jakeb/Documents/GitHub/New-Frontier/Content/Developers/jakeb/Collections/' took 0.01s
-[2018.05.28-03.57.16:865][  0]LogFileCache: Scanning file cache for directory 'C:/Users/jakeb/Documents/GitHub/New-Frontier/Content/Collections/' took 0.01s
-[2018.05.28-03.57.16:865][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2018.05.28-03.57.16:872][  0]LogContentBrowser: Native class hierarchy populated in 0.0066 seconds. Added 2363 classes and 519 folders.
-[2018.05.28-03.57.16:935][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2018.05.28-03.57.16:973][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2018.05.28-03.57.17:017][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
-[2018.05.28-03.57.17:100][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
-[2018.05.28-03.57.17:100][  0]LogLoad: (Engine Initialization) Total time: 24.29 seconds
-[2018.05.28-03.57.17:100][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2018.05.28-03.57.17:100][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2018.05.28-03.57.17:100][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2018.05.28-03.57.17:109][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.05.28-03.57.17:117][  0]LogOcInput: OculusInput is initialized
-[2018.05.28-03.57.17:144][  0]SourceControl: On branch master
-[2018.05.28-03.57.17:144][  0]SourceControl: Your branch is ahead of 'origin/master' by 1 commit.
-[2018.05.28-03.57.17:145][  0]SourceControl:   (use "git push" to publish your local commits)
-[2018.05.28-03.57.17:145][  0]SourceControl: Changes to be committed:
-[2018.05.28-03.57.17:145][  0]SourceControl:   (use "git reset HEAD <file>..." to unstage)
-[2018.05.28-03.57.17:145][  0]SourceControl: 	new file:   Config/DefaultInput.ini
-[2018.05.28-03.57.17:145][  0]SourceControl: Changes not staged for commit:
-[2018.05.28-03.57.17:145][  0]SourceControl:   (use "git add <file>..." to update what will be committed)
-[2018.05.28-03.57.17:145][  0]SourceControl:   (use "git checkout -- <file>..." to discard changes in working directory)
-[2018.05.28-03.57.17:145][  0]SourceControl: 	modified:   Config/DefaultEngine.ini
-[2018.05.28-03.57.17:145][  0]SourceControl: 	modified:   Config/DefaultInput.ini
-[2018.05.28-03.57.17:145][  0]SourceControl: 	modified:   Content/AdvancedTurnBasedTileTool/Config/DefaultEngine.ini
-[2018.05.28-03.57.17:145][  0]SourceControl: 	modified:   Content/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/ATBTT_PlayerController.uasset
-[2018.05.28-03.57.17:145][  0]SourceControl: 	modified:   Content/AdvancedTurnBasedTileToolkit/Maps/Map_Grid_Example.umap
-[2018.05.28-03.57.17:145][  0]SourceControl: 	modified:   Content/TestGridAttempt.umap
-[2018.05.28-03.57.17:145][  0]SourceControl: 	modified:   Saved/Config/Windows/EditorPerProjectUserSettings.ini
-[2018.05.28-03.57.17:145][  0]SourceControl: 	modified:   Saved/Logs/NewFrontierProject.log
-[2018.05.28-03.57.17:145][  0]SourceControl: Untracked files:
-[2018.05.28-03.57.17:145][  0]SourceControl:   (use "git add <file>..." to include in what will be committed)
-[2018.05.28-03.57.17:145][  0]SourceControl: 	Content/AdvancedTurnBasedTileTool/Content/
-[2018.05.28-03.57.17:145][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2018.05.28-03.57.17:147][  0]LogSlate: Took 0.000321 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.05.28-03.57.17:148][  0]LogSlate: Took 0.000180 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2018.05.28-03.57.17:153][  0]LogSlate: Took 0.000220 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2018.05.28-03.57.17:155][  0]LogSlate: Took 0.000103 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
-[2018.05.28-03.57.17:264][  0]LogSlate: Took 0.000348 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2018.05.28-03.57.17:315][  2]LogRenderer: Reallocating scene render targets to support 804x360 Format 10 NumSamples 1 (Frame:1).
-[2018.05.28-03.57.17:375][  2]LogAssetRegistry: Asset discovery search completed in 17.8163 seconds
-[2018.05.28-03.57.17:378][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2018.05.28-03.57.17:378][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000137 seconds (updated 0 objects)
-[2018.05.28-03.57.19:908][294]LogTemp: Repeating last play command: Selected Viewport
-[2018.05.28-03.57.20:021][294]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.05.28-03.57.20:021][294]LogHMD: Initializing OVRPlugin session
-[2018.05.28-03.57.20:046][294]PIE: New page: PIE session: TestGridAttempt (May 27, 2018, 5:57:20 PM)
-[2018.05.28-03.57.20:046][294]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestGridAttempt
-[2018.05.28-03.57.20:052][294]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005111s)
-[2018.05.28-03.57.20:052][294]LogAIModule: Creating AISystem for world TestGridAttempt
-[2018.05.28-03.57.20:053][294]LogPlayLevel: PIE: World Init took: (0.001104s)
-[2018.05.28-03.57.20:053][294]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestGridAttempt.TestGridAttempt to /Game/UEDPIE_0_TestGridAttempt.TestGridAttempt (0.006876s)
-[2018.05.28-03.57.20:077][294]LogInit: XAudio2 using 'Realtek HD Audio 2nd output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.05.28-03.57.20:088][294]LogInit: FAudioDevice initialized.
-[2018.05.28-03.57.20:132][294]LogLoad: Game class is 'ATBTT_GameMode_C'
-[2018.05.28-03.57.20:136][294]LogWorld: Bringing World /Game/UEDPIE_0_TestGridAttempt.TestGridAttempt up for play (max tick rate 0) at 2018.05.27-22.57.20
-[2018.05.28-03.57.20:137][294]LogWorld: Bringing up level for play took: 0.002745
-[2018.05.28-03.57.20:176][294]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 11 classes and 0 folders.
-[2018.05.28-03.57.20:176][294]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2018.05.28-03.57.20:176][294]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2018.05.28-03.57.20:176][294]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2018.05.28-03.57.20:179][294]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
-[2018.05.28-03.57.20:180][294]LogScriptCore: Warning: Script Msg: Attempted to access index 101 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
-[2018.05.28-03.57.20:180][294]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
-[2018.05.28-03.57.20:181][294]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
-[2018.05.28-03.57.20:181][294]LogScriptCore: Warning: Script Msg: Attempted to access index 110 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
-[2018.05.28-03.57.20:181][294]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
-[2018.05.28-03.57.20:183][294]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2018.05.28-03.57.20:183][294]PIE: Play in editor start time for /Game/UEDPIE_0_TestGridAttempt -0.38
-[2018.05.28-03.57.59:251][916]LogRenderer: Reallocating scene render targets to support 1208x576 Format 10 NumSamples 1 (Frame:4614).
-[2018.05.28-03.58.02:736][303]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.05.28-03.58.02:738][303]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.05.28-03.58.02:899][304]Cmd: QUIT_EDITOR
-[2018.05.28-03.58.03:086][304]LogExit: Preparing to exit.
-[2018.05.28-03.58.03:651][304]LogDirectoryWatcher: A directory notification for 'C:/Users/jakeb/Documents/GitHub/New-Frontier/Content/' was aborted.
-[2018.05.28-03.58.03:682][304]LogExit: Editor shut down
-[2018.05.28-03.58.03:688][304]LogExit: Transaction tracking system shut down
-[2018.05.28-03.58.03:891][304]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2018.05.28-03.58.03:891][304]LogDirectoryWatcher: A directory notification for '../../../../../../Users/jakeb/Documents/GitHub/New-Frontier/Content/' was aborted.
-[2018.05.28-03.58.03:891][304]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2018.05.28-03.58.03:891][304]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Media/MediaCompositing/Content/' was aborted.
-[2018.05.28-03.58.03:891][304]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/AppleARKit/Content/' was aborted.
-[2018.05.28-03.58.03:891][304]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
-[2018.05.28-03.58.03:891][304]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
-[2018.05.28-03.58.03:946][304]LogExit: Object subsystem successfully closed.
-[2018.05.28-03.58.03:966][304]LogD3D11RHI: Shutdown
-[2018.05.28-03.58.03:966][304]LogD3D11RHI: CleanupD3DDevice
-[2018.05.28-03.58.03:967][304]LogD3D11RHI: ~FD3D11DynamicRHI
-[2018.05.28-03.58.03:983][304]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (550)
-[2018.05.28-03.58.03:983][304]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (548)
-[2018.05.28-03.58.03:983][304]LogModuleManager: Shutting down and abandoning module SceneOutliner (546)
-[2018.05.28-03.58.03:983][304]LogModuleManager: Shutting down and abandoning module AddContentDialog (544)
-[2018.05.28-03.58.03:983][304]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.18/FeaturePacks/' was aborted.
-[2018.05.28-03.58.03:983][304]LogModuleManager: Shutting down and abandoning module WidgetCarousel (543)
-[2018.05.28-03.58.03:983][304]LogModuleManager: Shutting down and abandoning module EditorWidgets (540)
-[2018.05.28-03.58.03:983][304]LogModuleManager: Shutting down and abandoning module CollectionManager (538)
-[2018.05.28-03.58.03:983][304]LogDirectoryWatcher: A directory notification for 'C:/Users/jakeb/Documents/GitHub/New-Frontier/Content/Collections/' was aborted.
-[2018.05.28-03.58.03:984][304]LogDirectoryWatcher: A directory notification for 'C:/Users/jakeb/Documents/GitHub/New-Frontier/Content/Developers/jakeb/Collections/' was aborted.
-[2018.05.28-03.58.03:984][304]LogDirectoryWatcher: A directory notification for 'C:/Users/jakeb/Documents/GitHub/New-Frontier/Saved/Collections/' was aborted.
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module StatsViewer (536)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module FoliageEdit (534)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module LandscapeEditor (532)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module MeshPaintMode (530)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (528)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module ActorPickerMode (526)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module GeometryMode (524)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module TextureAlignMode (522)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module BspMode (520)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (518)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module HardwareSurvey (516)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (514)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module AutomationWorker (512)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (510)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (508)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module PlacementMode (507)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (504)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (502)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (500)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (498)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (496)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (494)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (492)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (490)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (488)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module CharacterAI (486)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module AudioCapture (484)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module SequenceRecorder (483)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module SmartSnapping (480)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module SessionServices (478)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module ViewportSnapping (476)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module ViewportInteraction (474)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module ClothPainter (472)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (471)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module LogVisualizer (468)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module IntroTutorials (466)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (465)
-[2018.05.28-03.58.03:984][304]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (462)
-[2018.05.28-03.58.03:985][304]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (460)
-[2018.05.28-03.58.03:985][304]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (458)
-[2018.05.28-03.58.03:985][304]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (457)
-[2018.05.28-03.58.04:569][304]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (454)
-[2018.05.28-03.58.04:569][304]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (452)
-[2018.05.28-03.58.04:569][304]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (450)
-[2018.05.28-03.58.04:569][304]LogModuleManager: Shutting down and abandoning module InputBindingEditor (448)
-[2018.05.28-03.58.04:569][304]LogModuleManager: Shutting down and abandoning module MergeActors (446)
-[2018.05.28-03.58.04:569][304]LogModuleManager: Shutting down and abandoning module SizeMap (444)
-[2018.05.28-03.58.04:569][304]LogModuleManager: Shutting down and abandoning module TreeMap (442)
-[2018.05.28-03.58.04:569][304]LogModuleManager: Shutting down and abandoning module ReferenceViewer (440)
-[2018.05.28-03.58.04:569][304]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (438)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module LocalizationService (437)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module HardwareTargeting (434)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (432)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module UndoHistory (430)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module XmlParser (428)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module Blutility (426)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (424)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (423)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (420)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module SettingsEditor (418)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module ProjectLauncher (416)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module SessionFrontend (414)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module ProfilerClient (412)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module DeviceManager (410)
-[2018.05.28-03.58.04:570][304]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (409)
-[2018.05.28-03.58.04:624][304]LogModuleManager: Shutting down and abandoning module AutomationController (406)
-[2018.05.28-03.58.04:624][304]LogModuleManager: Shutting down and abandoning module AutomationWindow (404)
-[2018.05.28-03.58.04:624][304]LogModuleManager: Shutting down and abandoning module Layers (402)
-[2018.05.28-03.58.04:624][304]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (400)
-[2018.05.28-03.58.04:624][304]LogModuleManager: Shutting down and abandoning module DetailCustomizations (398)
-[2018.05.28-03.58.04:624][304]LogModuleManager: Shutting down and abandoning module PackagesDialog (396)
-[2018.05.28-03.58.04:624][304]LogModuleManager: Shutting down and abandoning module Persona (394)
-[2018.05.28-03.58.04:624][304]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (393)
-[2018.05.28-03.58.04:624][304]LogModuleManager: Shutting down and abandoning module AnimGraph (391)
-[2018.05.28-03.58.04:624][304]LogModuleManager: Shutting down and abandoning module Kismet (388)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module ClassViewer (386)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module Toolbox (384)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module ModuleUI (382)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module MovieSceneTools (380)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module OutputLog (378)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module GammaUI (376)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module Documentation (374)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (372)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module MovieScene (370)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (368)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module LauncherPlatform (366)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module AnalyticsET (364)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module PortalServices (362)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module PortalRpc (360)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module MessagingRpc (358)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module AIModule (356)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module GameplayDebugger (355)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module AITestSuite (353)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module DesktopPlatform (350)
-[2018.05.28-03.58.04:633][304]LogModuleManager: Shutting down and abandoning module ProfilerService (348)
-[2018.05.28-03.58.04:876][304]LogModuleManager: Shutting down and abandoning module TaskGraph (346)
-[2018.05.28-03.58.04:876][304]LogModuleManager: Shutting down and abandoning module SteamVRController (344)
-[2018.05.28-03.58.04:876][304]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (342)
-[2018.05.28-03.58.04:876][304]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (340)
-[2018.05.28-03.58.04:876][304]LogModuleManager: Shutting down and abandoning module OculusInput (338)
-[2018.05.28-03.58.04:876][304]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (336)
-[2018.05.28-03.58.04:876][304]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (334)
-[2018.05.28-03.58.04:876][304]LogModuleManager: Shutting down and abandoning module CableComponent (332)
-[2018.05.28-03.58.04:876][304]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (330)
-[2018.05.28-03.58.04:876][304]LogModuleManager: Shutting down and abandoning module AndroidPermission (328)
-[2018.05.28-03.58.04:876][304]LogModuleManager: Shutting down and abandoning module ActorSequence (324)
-[2018.05.28-03.58.04:876][304]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (322)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (320)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module MediaCompositing (318)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module HTML5Networking (316)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module AlembicImporter (314)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module AlembicLibrary (313)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module GeometryCache (312)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (311)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (306)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module PluginBrowser (304)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (302)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (300)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (298)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module UObjectPlugin (296)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (294)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (292)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module GitSourceControl (290)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module SourceControl (289)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (286)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (284)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (282)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module Paper2DEditor (280)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module MeshPaint (279)
-[2018.05.28-03.58.04:877][304]LogModuleManager: Shutting down and abandoning module LevelEditor (277)
-[2018.05.28-03.58.04:878][304]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (276)
-[2018.05.28-03.58.04:878][304]LogModuleManager: Shutting down and abandoning module MainFrame (274)
-[2018.05.28-03.58.04:878][304]LogModuleManager: Shutting down and abandoning module HotReload (273)
-[2018.05.28-03.58.04:879][304]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (268)
-[2018.05.28-03.58.04:879][304]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (266)
-[2018.05.28-03.58.04:879][304]LogModuleManager: Shutting down and abandoning module PhysXVehicles (264)
-[2018.05.28-03.58.04:879][304]LogModuleManager: Shutting down and abandoning module OculusEditor (262)
-[2018.05.28-03.58.04:879][304]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (260)
-[2018.05.28-03.58.04:879][304]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (258)
-[2018.05.28-03.58.04:879][304]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (256)
-[2018.05.28-03.58.04:879][304]LogModuleManager: Shutting down and abandoning module UdpMessaging (254)
-[2018.05.28-03.58.04:980][304]LogModuleManager: Shutting down and abandoning module TcpMessaging (252)
-[2018.05.28-03.58.05:081][304]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (250)
-[2018.05.28-03.58.05:081][304]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (248)
-[2018.05.28-03.58.05:081][304]LogModuleManager: Shutting down and abandoning module FacialAnimation (246)
-[2018.05.28-03.58.05:081][304]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (244)
-[2018.05.28-03.58.05:081][304]LogModuleManager: Shutting down and abandoning module GraphEditor (243)
-[2018.05.28-03.58.05:081][304]LogModuleManager: Shutting down and abandoning module ContentBrowser (241)
-[2018.05.28-03.58.05:082][304]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (238)
-[2018.05.28-03.58.05:082][304]LogModuleManager: Shutting down and abandoning module Paper2D (236)
-[2018.05.28-03.58.05:082][304]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (234)
-[2018.05.28-03.58.05:082][304]LogModuleManager: Shutting down and abandoning module WmfMedia (232)
-[2018.05.28-03.58.05:084][304]LogModuleManager: Shutting down and abandoning module ImgMedia (230)
-[2018.05.28-03.58.05:084][304]LogModuleManager: Shutting down and abandoning module PacketHandler (228)
-[2018.05.28-03.58.05:084][304]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (226)
-[2018.05.28-03.58.05:084][304]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (224)
-[2018.05.28-03.58.05:084][304]LogModuleManager: Shutting down and abandoning module MediaAssets (222)
-[2018.05.28-03.58.05:084][304]LogModuleManager: Shutting down and abandoning module Media (221)
-[2018.05.28-03.58.05:089][304]LogModuleManager: Shutting down and abandoning module Overlay (218)
-[2018.05.28-03.58.05:089][304]LogModuleManager: Shutting down and abandoning module OverlayEditor (217)
-[2018.05.28-03.58.05:089][304]LogModuleManager: Shutting down and abandoning module VREditor (214)
-[2018.05.28-03.58.05:089][304]LogModuleManager: Shutting down and abandoning module StringTableEditor (212)
-[2018.05.28-03.58.05:089][304]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (210)
-[2018.05.28-03.58.05:089][304]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (208)
-[2018.05.28-03.58.05:089][304]LogModuleManager: Shutting down and abandoning module FunctionalTesting (206)
-[2018.05.28-03.58.05:089][304]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (204)
-[2018.05.28-03.58.05:089][304]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (203)
-[2018.05.28-03.58.05:089][304]LogModuleManager: Shutting down and abandoning module UMG (200)
-[2018.05.28-03.58.05:089][304]LogModuleManager: Shutting down and abandoning module UMGEditor (199)
-[2018.05.28-03.58.05:089][304]LogModuleManager: Shutting down and abandoning module Sequencer (198)
-[2018.05.28-03.58.05:090][304]LogModuleManager: Shutting down and abandoning module MessageLog (195)
-[2018.05.28-03.58.05:090][304]LogModuleManager: Shutting down and abandoning module SlateReflector (190)
-[2018.05.28-03.58.05:090][304]LogModuleManager: Shutting down and abandoning module Slate (188)
-[2018.05.28-03.58.05:090][304]LogModuleManager: Shutting down and abandoning module EditorStyle (186)
-[2018.05.28-03.58.05:092][304]LogModuleManager: Shutting down and abandoning module MRMesh (184)
-[2018.05.28-03.58.05:092][304]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (182)
-[2018.05.28-03.58.05:092][304]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (180)
-[2018.05.28-03.58.05:092][304]LogModuleManager: Shutting down and abandoning module XAudio2 (178)
-[2018.05.28-03.58.05:092][304]LogModuleManager: Shutting down and abandoning module Networking (176)
-[2018.05.28-03.58.05:092][304]LogModuleManager: Shutting down and abandoning module Core (172)
-[2018.05.28-03.58.05:092][304]LogModuleManager: Shutting down and abandoning module LevelSequence (168)
-[2018.05.28-03.58.05:092][304]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (166)
-[2018.05.28-03.58.05:093][304]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
-[2018.05.28-03.58.05:093][304]LogModuleManager: Shutting down and abandoning module MeshUtilities (162)
-[2018.05.28-03.58.05:093][304]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (161)
-[2018.05.28-03.58.05:093][304]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (160)
-[2018.05.28-03.58.05:093][304]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (159)
-[2018.05.28-03.58.05:093][304]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (157)
-[2018.05.28-03.58.05:093][304]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (155)
-[2018.05.28-03.58.05:093][304]LogModuleManager: Shutting down and abandoning module MaterialBaking (151)
-[2018.05.28-03.58.05:093][304]LogModuleManager: Shutting down and abandoning module DerivedDataCache (148)
-[2018.05.28-03.58.05:294][304]LogDerivedDataCache: Shutdown
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module TargetPlatform (146)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (145)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (143)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (141)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (139)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (137)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (135)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (133)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (131)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (129)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (127)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module ImageWrapper (126)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (123)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (121)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (119)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (117)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (115)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (113)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (111)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (109)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (107)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module Messaging (105)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (103)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (101)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (99)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (97)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (95)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (93)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (91)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (89)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (87)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (85)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (83)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (81)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (79)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (77)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (75)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (73)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (71)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (69)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (67)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module InputCore (64)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module Settings (62)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module PhysXCooking (60)
-[2018.05.28-03.58.05:294][304]LogModuleManager: Shutting down and abandoning module SteamVR (58)
-[2018.05.28-03.58.05:295][304]LogModuleManager: Shutting down and abandoning module OculusHMD (56)
-[2018.05.28-03.58.05:295][304]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (54)
-[2018.05.28-03.58.05:295][304]LogModuleManager: Shutting down and abandoning module AppleARKit (52)
-[2018.05.28-03.58.05:295][304]LogModuleManager: Shutting down and abandoning module AugmentedReality (51)
-[2018.05.28-03.58.05:295][304]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
-[2018.05.28-03.58.05:295][304]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
-[2018.05.28-03.58.05:295][304]LogModuleManager: Shutting down and abandoning module XMPP (43)
-[2018.05.28-03.58.05:295][304]LogModuleManager: Shutting down and abandoning module HTTP (41)
-[2018.05.28-03.58.05:295][304]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2018.05.28-03.58.05:295][304]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B8D68D1D6-48B7-43ED-C7D8-97B08FF06948%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.18.3-3832480%2B%2B%2BUE4%2BRelease-4.18&UserID=66d018314440f37d4b96acb1edec719d%7C68836662e0054680960d8a2ae3c93bfe%7C5a75d86d-5106-49eb-a1d8-18461bad34d4&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2018.05.28-03.58.05:295][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.05:796][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.06:296][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.06:796][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.07:297][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.07:797][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.08:298][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.08:799][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.09:300][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.09:800][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.10:301][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.10:802][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.11:302][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.11:803][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.12:304][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.12:804][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.13:304][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.13:805][304]LogHttp: Display: Sleeping 0.5s to wait for 1 outstanding Http requests.
-[2018.05.28-03.58.14:306][304]LogHttp: Warning: 0000025146758880: request failed, libcurl error: 6 (Couldn't resolve host name)
-[2018.05.28-03.58.14:306][304]LogHttp: Warning: 0000025146758880: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
-[2018.05.28-03.58.14:306][304]LogHttp: Warning: 0000025146758880: libcurl info message cache 1 (Closing connection 0)
-[2018.05.28-03.58.14:334][304]LogModuleManager: Shutting down and abandoning module SSL (40)
-[2018.05.28-03.58.14:335][304]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2018.05.28-03.58.14:335][304]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2018.05.28-03.58.14:336][304]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2018.05.28-03.58.14:339][304]LogExit: Exiting.
-[2018.05.28-03.58.14:350][304]Log file closed, 05/27/18 22:58:14
+[2018.05.30-20.39.11:430][  0]LogInit: Selected Device Profile: [Windows]
+[2018.05.30-20.39.11:430][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.05.30-20.39.11:448][  0]LogInit: Computer: ANDREW-HP
+[2018.05.30-20.39.11:448][  0]LogInit: User: Andrew
+[2018.05.30-20.39.11:449][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.05.30-20.39.11:449][  0]LogInit: High frequency timer resolution =2.435800 MHz
+[2018.05.30-20.39.11:449][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.05.30-20.39.11:449][  0]LogMemory: Platform Memory Stats for Windows
+[2018.05.30-20.39.11:449][  0]LogMemory: Process Physical Memory: 275.72 MB used, 275.72 MB peak
+[2018.05.30-20.39.11:449][  0]LogMemory: Process Virtual Memory: 273.12 MB used, 273.12 MB peak
+[2018.05.30-20.39.11:449][  0]LogMemory: Physical Memory: 4525.13 MB used,  11739.98 MB free, 16265.11 MB total
+[2018.05.30-20.39.11:449][  0]LogMemory: Virtual Memory: 624.98 MB used,  11739.98 MB free, 8388608.00 MB total
+[2018.05.30-20.39.11:578][  0]LogInit: Using OS detected language (en-US).
+[2018.05.30-20.39.11:578][  0]LogInit: Using OS detected locale (en-US).
+[2018.05.30-20.39.11:582][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2018.05.30-20.39.12:018][  0]LogWindows: Failed to load 'shcore.dll' (GetLastError=126)
+[2018.05.30-20.39.12:018][  0]LogWindows: File 'shcore.dll' does not exist
+[2018.05.30-20.39.12:018][  0]LogInit: Setting process to DPI aware
+[2018.05.30-20.39.12:021][  0]LogWindows: Failed to load 'shcore.dll' (GetLastError=126)
+[2018.05.30-20.39.12:021][  0]LogWindows: File 'shcore.dll' does not exist
+[2018.05.30-20.39.12:021][  0]LogInit: Setting process to DPI aware
+[2018.05.30-20.39.12:224][  0]LogD3D11RHI: D3D11 adapters:
+[2018.05.30-20.39.12:244][  0]LogD3D11RHI:    0. 'NVIDIA Quadro K2200M' (Feature Level 11_0)
+[2018.05.30-20.39.12:244][  0]LogD3D11RHI:       1974/0/7876 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2018.05.30-20.39.12:257][  0]LogD3D11RHI:    1. 'NVIDIA Quadro K2200M' (Feature Level 11_0)
+[2018.05.30-20.39.12:258][  0]LogD3D11RHI:       1974/0/7876 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x10de
+[2018.05.30-20.39.12:258][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.05.30-20.39.12:264][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.05.30-20.39.12:264][  0]LogD3D11RHI:     GPU DeviceId: 0x13b3 (for the marketing name, search the web for "GPU Device Id")
+[2018.05.30-20.39.12:264][  0]LogWindows: EnumDisplayDevices:
+[2018.05.30-20.39.12:264][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2018.05.30-20.39.12:265][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.05.30-20.39.12:265][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.05.30-20.39.12:265][  0]LogWindows:    3. 'NVIDIA Quadro K2200M' (P:0 D:0)
+[2018.05.30-20.39.12:265][  0]LogWindows:    4. 'NVIDIA Quadro K2200M' (P:0 D:0)
+[2018.05.30-20.39.12:265][  0]LogWindows:    5. 'NVIDIA Quadro K2200M' (P:0 D:0)
+[2018.05.30-20.39.12:265][  0]LogWindows:    6. 'NVIDIA Quadro K2200M' (P:0 D:0)
+[2018.05.30-20.39.12:265][  0]LogWindows:    7. 'RDPDD Chained DD' (P:0 D:0)
+[2018.05.30-20.39.12:265][  0]LogWindows:    8. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2018.05.30-20.39.12:265][  0]LogWindows:    9. 'RDP Reflector Display Driver' (P:0 D:0)
+[2018.05.30-20.39.12:265][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2018.05.30-20.39.12:265][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro K2200M
+[2018.05.30-20.39.12:265][  0]LogD3D11RHI:   Driver Version: 341.22 (internal:9.18.13.4122, unified:341.22)
+[2018.05.30-20.39.12:265][  0]LogD3D11RHI:      Driver Date: 11-26-2014
+[2018.05.30-20.39.12:265][  0]LogRHI: Texture pool is 1382 MB (70% of 1974 MB)
+[2018.05.30-20.39.12:282][  0]LogD3D11RHI: NvAPI_D3D_GetCurrentSLIState failed: 0xfffffff7
+[2018.05.30-20.39.12:282][  0]LogD3D11RHI: Async texture creation enabled
+[2018.05.30-20.39.12:298][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.05.30-20.39.14:110][  0]LogShaderCompilers: Guid format shader working directory is -13 characters bigger than the processId version (../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Intermediate/Shaders/WorkingDirectory/8776/).
+[2018.05.30-20.39.14:111][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Andrew/AppData/Local/Temp/UnrealShaderWorkingDir/A207BF0846350737783CE78C89236480/'.
+[2018.05.30-20.39.14:111][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.05.30-20.39.15:082][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.05.30-20.39.15:132][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.05.30-20.39.15:181][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.05.30-20.39.15:228][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.05.30-20.39.15:278][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.05.30-20.39.15:325][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.05.30-20.39.15:375][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.05.30-20.39.15:424][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.05.30-20.39.15:466][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.05.30-20.39.15:513][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2018.05.30-20.39.15:560][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2018.05.30-20.39.15:608][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2018.05.30-20.39.15:653][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2018.05.30-20.39.15:701][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2018.05.30-20.39.15:795][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2018.05.30-20.39.15:796][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.05.30-20.39.15:844][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.05.30-20.39.15:880][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.05.30-20.39.15:963][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.05.30-20.39.15:988][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.05.30-20.39.16:035][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.05.30-20.39.16:081][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.05.30-20.39.16:126][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.05.30-20.39.16:173][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.05.30-20.39.16:173][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.05.30-20.39.16:554][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.05.30-20.39.16:640][  0]LogDerivedDataCache: Loaded boot cache 0.09s 78MB C:/Users/Andrew/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2018.05.30-20.39.16:640][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Andrew/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc
+[2018.05.30-20.39.16:641][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.05.30-20.39.16:641][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.05.30-20.39.16:641][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.05.30-20.39.16:641][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.05.30-20.39.16:660][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.05.30-20.39.16:671][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Andrew/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.05.30-20.39.16:682][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.05.30-20.39.16:682][  0]LogSlate: Using Freetype 2.6.0
+[2018.05.30-20.39.16:683][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.05.30-20.39.16:683][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.05.30-20.39.17:051][  0]LogInit: Selected Device Profile: [Windows]
+[2018.05.30-20.39.17:361][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.05.30-20.39.17:398][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.05.30-20.39.17:398][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.05.30-20.39.17:398][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.05.30-20.39.17:398][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.05.30-20.39.17:398][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.05.30-20.39.17:424][  0]LogNetVersion: NewFrontierProject , NetCL: 3709383, EngineNetVer: 2, GameNetVer: 0 (Checksum: 729592610)
+[2018.05.30-20.39.17:592][  0]LogAssetRegistry: FAssetRegistry took 0.0240 seconds to start up
+[2018.05.30-20.39.18:134][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 2 prioritized culture(s) in 0.070592 seconds
+[2018.05.30-20.39.18:141][  0]LogUObjectArray: 35870 objects as part of root set at end of initial load.
+[2018.05.30-20.39.18:141][  0]LogUObjectAllocator: 7363696 out of 0 bytes used by permanent object pool.
+[2018.05.30-20.39.18:141][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.05.30-20.39.18:181][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.05.30-20.39.20:760][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.05.30-20.39.20:795][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.05.30-20.39.21:422][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.05.30-20.39.21:819][  0]SourceControl: Source control is disabled
+[2018.05.30-20.39.23:016][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.05.30-20.39.23:252][  0]LogOcInput: OculusInput pre-init called
+[2018.05.30-20.39.23:509][  0]LogEngine: Initializing Engine...
+[2018.05.30-20.39.23:511][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.05.30-20.39.23:747][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.05.30-20.39.23:747][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.05.30-20.39.23:940][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.05.30-20.39.23:946][  0]LogInit: XAudio2 using 'Speakers/Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.05.30-20.39.24:174][  0]LogInit: FAudioDevice initialized.
+[2018.05.30-20.39.24:287][  0]LogDerivedDataCache: Saved boot cache 0.11s 78MB C:/Users/Andrew/AppData/Local/UnrealEngine/4.18/DerivedDataCache/Boot.ddc.
+[2018.05.30-20.39.24:299][  0]LogInit: Texture streaming: Enabled
+[2018.05.30-20.39.24:380][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.05.30-20.39.24:494][  0]LogInit: Transaction tracking system initialized
+[2018.05.30-20.39.24:775][  0]BlueprintLog: New page: Editor Load
+[2018.05.30-20.39.25:559][  0]LocalizationService: Localization service is disabled
+[2018.05.30-20.39.26:223][  0]LogConsoleResponse: Display: 
+[2018.05.30-20.39.26:395][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.05.30-20.39.26:395][  0]LogCook: Display: Mobile HDR setting 1
+[2018.05.30-20.39.26:395][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.05.30-20.39.26:667][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Andrew/Documents/GitHub/New-Frontier/Content/' took 0.02s
+[2018.05.30-20.39.27:518][  0]LogSlate: Took 0.000594 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.05.30-20.40.14:238][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestGridAttempt.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.05.30-20.40.14:245][  0]LightingResults: New page: Lighting Build
+[2018.05.30-20.40.14:283][  0]MapCheck: New page: Map Check
+[2018.05.30-20.40.14:283][  0]LightingResults: New page: Lighting Build
+[2018.05.30-20.40.25:267][  0]LogAIModule: Creating AISystem for world TestGridAttempt
+[2018.05.30-20.40.25:322][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.05.30-20.40.25:379][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.05.30-20.40.25:438][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 58.98ms to complete.
+[2018.05.30-20.40.25:438][  0]LogFileHelpers: Loading map 'TestGridAttempt' took 11.200
+[2018.05.30-20.40.25:554][  0]LogStats: Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//SplashScreenThread///Thread_f40_0///####STATCAT_Advanced#### old //STATGROUP_Threads//SplashScreenThread///Thread_1d20_0///####STATCAT_Advanced####
+[2018.05.30-20.40.25:554][  0]LogCollectionManager: Loaded 0 collections in 0.001218 seconds
+[2018.05.30-20.40.25:637][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Andrew/Documents/GitHub/New-Frontier/Saved/Collections/' took 0.01s
+[2018.05.30-20.40.25:637][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Andrew/Documents/GitHub/New-Frontier/Content/Developers/Andrew/Collections/' took 0.01s
+[2018.05.30-20.40.25:637][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Andrew/Documents/GitHub/New-Frontier/Content/Collections/' took 0.01s
+[2018.05.30-20.40.25:637][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2018.05.30-20.40.25:647][  0]LogContentBrowser: Native class hierarchy populated in 0.0090 seconds. Added 2363 classes and 519 folders.
+[2018.05.30-20.40.25:706][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2018.05.30-20.40.26:122][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2018.05.30-20.40.26:167][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2018.05.30-20.40.26:212][  0]LogSlate: Took 0.000158 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.05.30-20.40.26:225][  0]LogSlate: Took 0.006592 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.05.30-20.40.26:404][  0]LogRenderer: Reallocating scene render targets to support 964x436 Format 10 NumSamples 1 (Frame:1).
+[2018.05.30-20.40.26:481][  0]LogSlate: Took 0.005084 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.05.30-20.40.26:686][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2018.05.30-20.40.26:686][  0]LogLoad: (Engine Initialization) Total time: 77.28 seconds
+[2018.05.30-20.40.26:686][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.05.30-20.40.26:686][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2018.05.30-20.40.26:738][  0]SourceControl: On branch master
+[2018.05.30-20.40.26:738][  0]SourceControl: Your branch is up to date with 'origin/master'.
+[2018.05.30-20.40.26:738][  0]SourceControl: Changes not staged for commit:
+[2018.05.30-20.40.26:738][  0]SourceControl:   (use "git add <file>..." to update what will be committed)
+[2018.05.30-20.40.26:738][  0]SourceControl:   (use "git checkout -- <file>..." to discard changes in working directory)
+[2018.05.30-20.40.26:738][  0]SourceControl: 	modified:   Content/TestLevel.umap
+[2018.05.30-20.40.26:738][  0]SourceControl: 	modified:   Saved/Config/Windows/EditorPerProjectUserSettings.ini
+[2018.05.30-20.40.26:738][  0]SourceControl: 	modified:   Saved/Logs/NewFrontierProject.log
+[2018.05.30-20.40.26:738][  0]SourceControl: no changes added to commit (use "git add" and/or "git commit -a")
+[2018.05.30-20.40.26:739][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.05.30-20.40.27:031][  4]LogAssetRegistry: Asset discovery search completed in 69.4585 seconds
+[2018.05.30-20.40.27:036][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.05.30-20.40.27:036][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000067 seconds (updated 0 objects)
+[2018.05.30-20.40.42:583][924]LogEditorViewport: Clicking on Actor (LMB): BP_Grid_Manager_C (BP_Grid_Manager)
+[2018.05.30-20.40.58:604][874]LogSlate: Took 0.000172 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.05.30-20.40.58:684][874]LogAIModule: Creating AISystem for world TestLevel
+[2018.05.30-20.40.58:715][874]Cmd: MAP LOAD FILE="../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.05.30-20.40.58:715][874]LightingResults: New page: Lighting Build
+[2018.05.30-20.40.58:716][874]LoadErrors: New page: Loading map: TestLevel.umap
+[2018.05.30-20.40.58:718][874]MapCheck: New page: Map Check
+[2018.05.30-20.40.58:718][874]LightingResults: New page: Lighting Build
+[2018.05.30-20.40.58:758][874]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.05.30-20.40.58:854][874]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.05.30-20.40.58:951][874]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 95.829ms to complete.
+[2018.05.30-20.40.58:952][874]LogFileHelpers: Loading map 'TestLevel' took 0.237
+[2018.05.30-20.41.04:682][216]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.05.30-20.41.06:300][310]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.05.30-20.41.18:404][ 30]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.30-20.41.18:632][ 30]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.30-20.41.18:633][ 30]PIE: New page: PIE session: TestLevel (May 30, 2018, 12:41:18 PM)
+[2018.05.30-20.41.18:633][ 30]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.05.30-20.41.18:643][ 30]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009883s)
+[2018.05.30-20.41.18:643][ 30]LogAIModule: Creating AISystem for world TestLevel
+[2018.05.30-20.41.18:643][ 30]LogPlayLevel: PIE: World Init took: (0.000597s)
+[2018.05.30-20.41.18:643][ 30]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.010779s)
+[2018.05.30-20.41.18:657][ 30]LogInit: XAudio2 using 'Speakers/Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.05.30-20.41.18:668][ 30]LogInit: FAudioDevice initialized.
+[2018.05.30-20.41.18:708][ 30]LogLoad: Game class is 'ATBTT_GameMode_C'
+[2018.05.30-20.41.18:712][ 30]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 60) at 2018.05.30-16.41.18
+[2018.05.30-20.41.18:713][ 30]LogWorld: Bringing up level for play took: 0.002879
+[2018.05.30-20.41.18:752][ 30]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 11 classes and 0 folders.
+[2018.05.30-20.41.18:753][ 30]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-20.41.18:753][ 30]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-20.41.18:753][ 30]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-20.41.18:759][ 30]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.41.18:759][ 30]LogScriptCore: Warning: Script Msg: Attempted to access index 101 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.41.18:759][ 30]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.41.18:760][ 30]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.41.18:760][ 30]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.41.18:760][ 30]LogScriptCore: Warning: Script Msg: Attempted to access index 110 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.41.18:760][ 30]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.41.18:760][ 30]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.41.18:762][ 30]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-20.41.18:762][ 30]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel -0.727
+[2018.05.30-20.41.56:391][276]LogEditorViewport: Clicking on Actor (LMB): Tile_Wall_C (Tile_Wall)
+[2018.05.30-20.43.51:092][ 11]LogEditorViewport: Clicking on Actor (LMB): Unit_Player_Ranged_C (Unit_Player_Ranged)
+[2018.05.30-20.44.35:747][656]LogEditorViewport: Clicking on Actor (LMB): Unit_Player_Melee_C (Unit_Player_Melee)
+[2018.05.30-20.44.37:788][776]LogEditorViewport: Clicking on Actor (LMB): Unit_Player_Ranged_C (Unit_Player_Ranged)
+[2018.05.30-20.44.38:861][838]LogEditorViewport: Clicking on Actor (LMB): Tile_Wall_C (Tile_Wall)
+[2018.05.30-20.47.30:659][120]LogEditorViewport: Clicking on Actor (LMB): Unit_Player_Melee_C (Unit_Player_Melee)
+[2018.05.30-20.47.35:051][381]LogEditorViewport: Clicking on Actor (LMB): BP_Grid_Manager_C (BP_Grid_Manager)
+[2018.05.30-20.47.59:883][845]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.05.30-20.48.09:224][403]LogEditorViewport: Clicking on Actor (LMB): BP_Grid_Manager_C (BP_Grid_Manager)
+[2018.05.30-20.50.13:374][758]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.05.30-20.50.14:426][819]LogEditorViewport: Clicking on Actor (LMB): BP_Grid_Manager_C (BP_Grid_Manager)
+[2018.05.30-20.51.21:325][420]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.05.30-20.51.22:229][472]LogEditorViewport: Clicking on Actor (LMB): Tile_Wall_C (Tile_Wall)
+[2018.05.30-20.51.24:264][592]LogEditorViewport: Clicking on Actor (LMB): Tile_Wall_C (Tile_Wall)
+[2018.05.30-20.51.39:624][512]LogSlate: Took 0.000215 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.05.30-20.51.48:694][977]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestLevel" FILE="../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Saved/Autosaves/Game/TestLevel_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2018.05.30-20.51.48:790][977]LogSavePackage: Save=88.53ms
+[2018.05.30-20.51.48:790][977]LogSavePackage: Moving '../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Saved/TestLevel_Auto19F238AA0459C5FCA6BD081A64E797DA4.tmp' to '../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Saved/Autosaves/Game/TestLevel_Auto1.umap'
+[2018.05.30-20.51.48:791][977]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Saved/Autosaves/Game/TestLevel_Auto1.umap
+[2018.05.30-20.51.48:793][977]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/TestLevel' took 0.117
+[2018.05.30-20.51.48:793][977]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.117
+[2018.05.30-20.53.10:110][826]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.30-20.53.10:131][826]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.30-20.53.10:131][826]PIE: New page: PIE session: TestLevel (May 30, 2018, 12:53:10 PM)
+[2018.05.30-20.53.10:131][826]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.05.30-20.53.10:139][826]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008259s)
+[2018.05.30-20.53.10:140][826]LogAIModule: Creating AISystem for world TestLevel
+[2018.05.30-20.53.10:140][826]LogPlayLevel: PIE: World Init took: (0.000673s)
+[2018.05.30-20.53.10:140][826]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.009217s)
+[2018.05.30-20.53.10:154][826]LogInit: XAudio2 using 'Speakers/Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.05.30-20.53.10:165][826]LogInit: FAudioDevice initialized.
+[2018.05.30-20.53.10:193][826]LogLoad: Game class is 'ATBTT_GameMode_C'
+[2018.05.30-20.53.10:196][826]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 60) at 2018.05.30-16.53.10
+[2018.05.30-20.53.10:196][826]LogWorld: Bringing up level for play took: 0.002564
+[2018.05.30-20.53.10:197][826]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-20.53.10:197][826]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-20.53.10:197][826]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-20.53.10:201][826]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.53.10:201][826]LogScriptCore: Warning: Script Msg: Attempted to access index 101 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.53.10:201][826]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.53.10:202][826]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.53.10:202][826]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.53.10:202][826]LogScriptCore: Warning: Script Msg: Attempted to access index 110 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.53.10:202][826]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.53.10:202][826]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.53.10:207][826]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-20.53.10:207][826]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel 0.708
+[2018.05.30-20.55.12:711][163]LogEditorViewport: Clicking on Actor (LMB): BP_Grid_Manager_C (BP_Grid_Manager)
+[2018.05.30-20.55.36:496][724]LogEditorViewport: Clicking on Actor (LMB): Tile_Wall_C (Tile_Wall4)
+[2018.05.30-20.56.02:618][716]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Heightmap_Actor.Heightmap_Actor_C:UserConstructionScript'!
+[2018.05.30-20.56.02:618][716]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Heightmap_Actor_C /Engine/Transient.World_3:PersistentLevel.Heightmap_Actor_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Heightmap_Actor.Heightmap_Actor_C:UserConstructionScript:0250
+[2018.05.30-20.56.02:618][716]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Heightmap_Actor_C /Engine/Transient.World_3:PersistentLevel.Heightmap_Actor_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Heightmap_Actor.Heightmap_Actor_C:UserConstructionScript:02B0
+[2018.05.30-20.56.18:638][663]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript'!
+[2018.05.30-20.56.18:638][663]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript'!
+[2018.05.30-20.56.18:639][663]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item3
+	Unit_Player_Ranged_C /Engine/Transient.World_4:PersistentLevel.Unit_Player_Ranged_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript:0193
+[2018.05.30-20.56.18:639][663]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript'!
+[2018.05.30-20.56.18:639][663]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item3
+	Unit_Player_Ranged_C /Engine/Transient.World_4:PersistentLevel.Unit_Player_Ranged_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript:03CC
+[2018.05.30-20.56.18:639][663]LogScript: Warning: Accessed None trying to read property GridManager_Ref
+	Unit_Player_Ranged_C /Engine/Transient.World_4:PersistentLevel.Unit_Player_Ranged_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript:0343
+[2018.05.30-20.56.18:641][663]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript'!
+[2018.05.30-20.56.18:641][663]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript'!
+[2018.05.30-20.56.18:642][663]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item3
+	Unit_Player_Melee_C /Engine/Transient.World_5:PersistentLevel.Unit_Player_Melee_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript:0193
+[2018.05.30-20.56.18:642][663]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript'!
+[2018.05.30-20.56.18:642][663]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item3
+	Unit_Player_Melee_C /Engine/Transient.World_5:PersistentLevel.Unit_Player_Melee_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript:03CC
+[2018.05.30-20.56.18:642][663]LogScript: Warning: Accessed None trying to read property GridManager_Ref
+	Unit_Player_Melee_C /Engine/Transient.World_5:PersistentLevel.Unit_Player_Melee_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript:0343
+[2018.05.30-20.56.18:665][664]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript'!
+[2018.05.30-20.56.18:665][664]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript'!
+[2018.05.30-20.56.18:665][664]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item3
+	Unit_Enemy_Ranged_C /Engine/Transient.World_6:PersistentLevel.Unit_Enemy_Ranged_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript:0193
+[2018.05.30-20.56.18:665][664]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript'!
+[2018.05.30-20.56.18:665][664]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item3
+	Unit_Enemy_Ranged_C /Engine/Transient.World_6:PersistentLevel.Unit_Enemy_Ranged_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript:03CC
+[2018.05.30-20.56.18:665][664]LogScript: Warning: Accessed None trying to read property GridManager_Ref
+	Unit_Enemy_Ranged_C /Engine/Transient.World_6:PersistentLevel.Unit_Enemy_Ranged_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript:0343
+[2018.05.30-20.56.18:667][664]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript'!
+[2018.05.30-20.56.18:667][664]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript'!
+[2018.05.30-20.56.18:667][664]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item3
+	Unit_Enemy_Melee_C /Engine/Transient.World_7:PersistentLevel.Unit_Enemy_Melee_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript:0193
+[2018.05.30-20.56.18:667][664]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript'!
+[2018.05.30-20.56.18:667][664]LogScript: Warning: Accessed None trying to read property CallFunc_Array_Get_Item3
+	Unit_Enemy_Melee_C /Engine/Transient.World_7:PersistentLevel.Unit_Enemy_Melee_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript:03CC
+[2018.05.30-20.56.18:667][664]LogScript: Warning: Accessed None trying to read property GridManager_Ref
+	Unit_Enemy_Melee_C /Engine/Transient.World_7:PersistentLevel.Unit_Enemy_Melee_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Pawns/Unit.Unit_C:UserConstructionScript:0343
+[2018.05.30-20.56.22:999][907]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript'!
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript:00B5
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript:0108
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript:01B1
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript:015F
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:0043
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:0523
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:05E7
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:06AB
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:0744
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:07DD
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:0876
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:UserConstructionScript:002F
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make BlockedCornerIndexes Array:00C1
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make BlockedCornerIndexes Array:01F9
+[2018.05.30-20.56.22:999][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make BlockedCornerIndexes Array:0331
+[2018.05.30-20.56.23:000][907]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_C /Engine/Transient.World_8:PersistentLevel.Tile_Wall_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make BlockedCornerIndexes Array:0469
+[2018.05.30-20.56.34:805][771]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.30-20.56.34:827][771]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.30-20.56.34:827][771]PIE: New page: PIE session: TestLevel (May 30, 2018, 12:56:34 PM)
+[2018.05.30-20.56.34:827][771]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.05.30-20.56.34:835][771]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008337s)
+[2018.05.30-20.56.34:837][771]LogAIModule: Creating AISystem for world TestLevel
+[2018.05.30-20.56.34:837][771]LogPlayLevel: PIE: World Init took: (0.001406s)
+[2018.05.30-20.56.34:837][771]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.010023s)
+[2018.05.30-20.56.34:853][771]LogInit: XAudio2 using 'Speakers/Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.05.30-20.56.34:864][771]LogInit: FAudioDevice initialized.
+[2018.05.30-20.56.34:897][771]LogLoad: Game class is 'ATBTT_GameMode_C'
+[2018.05.30-20.56.34:901][771]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.05.30-16.56.34
+[2018.05.30-20.56.34:901][771]LogWorld: Bringing up level for play took: 0.003056
+[2018.05.30-20.56.34:902][771]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-20.56.34:902][771]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-20.56.34:902][771]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-20.56.34:906][771]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.56.34:906][771]LogScriptCore: Warning: Script Msg: Attempted to access index 101 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.56.34:906][771]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.56.34:907][771]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.56.34:907][771]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.56.34:907][771]LogScriptCore: Warning: Script Msg: Attempted to access index 110 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.56.34:907][771]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.56.34:907][771]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.56.34:912][771]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-20.56.34:912][771]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel -0.59
+[2018.05.30-20.56.50:852][148]LogScriptCore: Warning: Script Msg: Attempted to access index -1 from array 'Move Choice Candidates' of length 1 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C:Decide the final target from viable options'!
+[2018.05.30-20.57.01:916][ 65]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.30-20.57.01:937][ 65]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.30-20.57.01:937][ 65]PIE: New page: PIE session: TestLevel (May 30, 2018, 12:57:01 PM)
+[2018.05.30-20.57.01:937][ 65]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.05.30-20.57.01:945][ 65]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007232s)
+[2018.05.30-20.57.01:945][ 65]LogAIModule: Creating AISystem for world TestLevel
+[2018.05.30-20.57.01:945][ 65]LogPlayLevel: PIE: World Init took: (0.000675s)
+[2018.05.30-20.57.01:945][ 65]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.008175s)
+[2018.05.30-20.57.01:960][ 65]LogInit: XAudio2 using 'Speakers/Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.05.30-20.57.01:971][ 65]LogInit: FAudioDevice initialized.
+[2018.05.30-20.57.02:007][ 65]LogLoad: Game class is 'ATBTT_GameMode_C'
+[2018.05.30-20.57.02:014][ 65]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.05.30-16.57.02
+[2018.05.30-20.57.02:016][ 65]LogWorld: Bringing up level for play took: 0.007071
+[2018.05.30-20.57.02:017][ 65]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-20.57.02:017][ 65]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-20.57.02:017][ 65]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-20.57.02:027][ 65]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.57.02:028][ 65]LogScriptCore: Warning: Script Msg: Attempted to access index 101 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.57.02:028][ 65]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.57.02:028][ 65]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.57.02:028][ 65]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.57.02:028][ 65]LogScriptCore: Warning: Script Msg: Attempted to access index 110 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.57.02:028][ 65]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.57.02:028][ 65]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.57.02:034][ 65]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-20.57.02:034][ 65]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel 0.531
+[2018.05.30-20.57.23:787][907]LogScriptCore: Warning: Script Msg: Attempted to access index -1 from array 'Move Choice Candidates' of length 1 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C:Decide the final target from viable options'!
+[2018.05.30-20.57.27:964][244]LogEditorViewport: Clicking on Actor (LMB): Tile_Wall_C (Tile_Wall)
+[2018.05.30-20.57.52:095][167]LogEditorViewport: Clicking on Actor (LMB): BP_Grid_Manager_C (BP_Grid_Manager)
+[2018.05.30-20.57.52:119][167]LogEditorViewport: Clicking on Component (LMB): HierarchicalInstancedStaticMeshComponent (NODE_AddHierarchicalInstancedStaticMeshComponent-0_4)
+[2018.05.30-20.58.05:475][ 41]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.30-20.58.05:498][ 41]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.30-20.58.05:498][ 41]PIE: New page: PIE session: TestLevel (May 30, 2018, 12:58:05 PM)
+[2018.05.30-20.58.05:498][ 41]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.05.30-20.58.05:506][ 41]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007806s)
+[2018.05.30-20.58.05:506][ 41]LogAIModule: Creating AISystem for world TestLevel
+[2018.05.30-20.58.05:506][ 41]LogPlayLevel: PIE: World Init took: (0.000668s)
+[2018.05.30-20.58.05:507][ 41]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.008790s)
+[2018.05.30-20.58.05:525][ 41]LogInit: XAudio2 using 'Speakers/Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.05.30-20.58.05:535][ 41]LogInit: FAudioDevice initialized.
+[2018.05.30-20.58.05:567][ 41]LogLoad: Game class is 'ATBTT_GameMode_C'
+[2018.05.30-20.58.05:570][ 41]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.05.30-16.58.05
+[2018.05.30-20.58.05:570][ 41]LogWorld: Bringing up level for play took: 0.002938
+[2018.05.30-20.58.05:571][ 41]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-20.58.05:571][ 41]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-20.58.05:571][ 41]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-20.58.05:575][ 41]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.58.05:575][ 41]LogScriptCore: Warning: Script Msg: Attempted to access index 101 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.58.05:575][ 41]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.58.05:575][ 41]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.58.05:576][ 41]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.58.05:576][ 41]LogScriptCore: Warning: Script Msg: Attempted to access index 110 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.58.05:576][ 41]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.58.05:576][ 41]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-20.58.05:581][ 41]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-20.58.05:581][ 41]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel 0.078
+[2018.05.30-21.00.45:579][270]LogEditorViewport: Clicking on Actor (LMB): BP_Grid_Manager_C (BP_Grid_Manager)
+[2018.05.30-21.00.50:299][618]LogEditorViewport: Clicking on Actor (LMB): BP_Grid_Manager_C (BP_Grid_Manager)
+[2018.05.30-21.00.57:915][178]LogEditorViewport: Clicking on Actor (LMB): Tile_Wall_C (Tile_Wall)
+[2018.05.30-21.01.46:350][746]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript'!
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript:00B5
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript:0108
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript:01B1
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript:015F
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:0043
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:0523
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:05E7
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:06AB
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:0744
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:07DD
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:0876
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:UserConstructionScript:002F
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make BlockedCornerIndexes Array:00C1
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make BlockedCornerIndexes Array:01F9
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make BlockedCornerIndexes Array:0331
+[2018.05.30-21.01.46:350][746]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Low_C /Engine/Transient.World_9:PersistentLevel.Tile_Wall_Low_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make BlockedCornerIndexes Array:0469
+[2018.05.30-21.01.55:523][392]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.05.30-21.02.06:242][203]LogEditorViewport: Clicking on Actor (LMB): Tile_Wall_C (Tile_Wall)
+[2018.05.30-21.03.35:375][262]LogEditorViewport: Clicking on Actor (LMB): BP_Grid_Manager_C (BP_Grid_Manager)
+[2018.05.30-21.03.51:262][315]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.30-21.03.51:283][315]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.30-21.03.51:283][315]PIE: New page: PIE session: TestLevel (May 30, 2018, 1:03:51 PM)
+[2018.05.30-21.03.51:283][315]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.05.30-21.03.51:292][315]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008813s)
+[2018.05.30-21.03.51:293][315]LogAIModule: Creating AISystem for world TestLevel
+[2018.05.30-21.03.51:293][315]LogPlayLevel: PIE: World Init took: (0.000689s)
+[2018.05.30-21.03.51:293][315]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.009802s)
+[2018.05.30-21.03.51:310][315]LogInit: XAudio2 using 'Speakers/Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.05.30-21.03.51:321][315]LogInit: FAudioDevice initialized.
+[2018.05.30-21.03.51:353][315]LogLoad: Game class is 'ATBTT_GameMode_C'
+[2018.05.30-21.03.51:356][315]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.05.30-17.03.51
+[2018.05.30-21.03.51:357][315]LogWorld: Bringing up level for play took: 0.002716
+[2018.05.30-21.03.51:357][315]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-21.03.51:357][315]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-21.03.51:357][315]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-21.03.51:361][315]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.03.51:362][315]LogScriptCore: Warning: Script Msg: Attempted to access index 101 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.03.51:362][315]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.03.51:362][315]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.03.51:362][315]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.03.51:362][315]LogScriptCore: Warning: Script Msg: Attempted to access index 110 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.03.51:362][315]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.03.51:362][315]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.03.51:368][315]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-21.03.51:368][315]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel -0.14
+[2018.05.30-21.04.35:596][481]LogEditorViewport: Clicking on Actor (LMB): Tile_Wall_C (Tile_Wall)
+[2018.05.30-21.04.37:900][657]Cmd: DELETE
+[2018.05.30-21.04.37:900][657]Cmd: ACTOR DELETE
+[2018.05.30-21.04.37:907][657]LogEditorActor: Deleted Actor: Tile_Wall_C
+[2018.05.30-21.04.37:923][657]LogEditorActor: Deleted 1 Actors (0.020 secs)
+[2018.05.30-21.04.42:216][890]LogScriptCore: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript'!
+[2018.05.30-21.04.42:216][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript:00B5
+[2018.05.30-21.04.42:216][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript:0108
+[2018.05.30-21.04.42:216][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript:01B1
+[2018.05.30-21.04.42:216][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Grid_Actor.Grid_Actor_C:UserConstructionScript:015F
+[2018.05.30-21.04.42:217][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:0043
+[2018.05.30-21.04.42:217][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:0523
+[2018.05.30-21.04.42:217][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:05E7
+[2018.05.30-21.04.42:217][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:06AB
+[2018.05.30-21.04.42:217][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:0744
+[2018.05.30-21.04.42:217][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:07DD
+[2018.05.30-21.04.42:217][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make Edge Cost Int Array:0876
+[2018.05.30-21.04.42:217][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:UserConstructionScript:002F
+[2018.05.30-21.04.42:217][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make BlockedCornerIndexes Array:00C1
+[2018.05.30-21.04.42:217][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make BlockedCornerIndexes Array:01F9
+[2018.05.30-21.04.42:217][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make BlockedCornerIndexes Array:0331
+[2018.05.30-21.04.42:217][890]LogScript: Warning: Accessed None trying to read property GridManagerRef
+	Tile_Wall_Block_C /Engine/Transient.World_10:PersistentLevel.Tile_Wall_Block_C_0
+	Function /Game/AdvancedTurnBasedTileToolkit/Blueprints/Tiles/Tile_Parent.Tile_Parent_C:Make BlockedCornerIndexes Array:0469
+[2018.05.30-21.04.42:302][896]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.42:302][896]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.42:303][896]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.42:303][896]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.42:304][896]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.42:304][896]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.42:305][896]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.42:305][896]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.46:601][219]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.05.30-21.04.48:907][375]LogTemp: Repeating last play command: Selected Viewport
+[2018.05.30-21.04.48:932][375]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.05.30-21.04.48:932][375]PIE: New page: PIE session: TestLevel (May 30, 2018, 1:04:48 PM)
+[2018.05.30-21.04.48:932][375]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2018.05.30-21.04.48:940][375]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007226s)
+[2018.05.30-21.04.48:940][375]LogAIModule: Creating AISystem for world TestLevel
+[2018.05.30-21.04.48:941][375]LogPlayLevel: PIE: World Init took: (0.000789s)
+[2018.05.30-21.04.48:941][375]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.008293s)
+[2018.05.30-21.04.48:960][375]LogInit: XAudio2 using 'Speakers/Headphones (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.05.30-21.04.48:970][375]LogInit: FAudioDevice initialized.
+[2018.05.30-21.04.49:004][375]LogLoad: Game class is 'ATBTT_GameMode_C'
+[2018.05.30-21.04.49:007][375]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2018.05.30-17.04.49
+[2018.05.30-21.04.49:008][375]LogWorld: Bringing up level for play took: 0.002958
+[2018.05.30-21.04.49:009][375]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-21.04.49:009][375]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2018.05.30-21.04.49:009][375]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-21.04.49:013][375]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.49:013][375]LogScriptCore: Warning: Script Msg: Attempted to access index 101 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.49:013][375]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.49:014][375]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.49:014][375]LogScriptCore: Warning: Script Msg: Attempted to access index 108 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.49:014][375]LogScriptCore: Warning: Script Msg: Attempted to access index 110 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.49:014][375]LogScriptCore: Warning: Script Msg: Attempted to access index 109 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.49:014][375]LogScriptCore: Warning: Script Msg: Attempted to access index 100 from array 'VectorFieldArray' of length 100 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C'!
+[2018.05.30-21.04.49:019][375]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2018.05.30-21.04.49:019][375]PIE: Play in editor start time for /Game/UEDPIE_0_TestLevel -0.489
+[2018.05.30-21.05.07:517][882]LogScriptCore: Warning: Script Msg: Attempted to access index -1 from array 'Move Choice Candidates' of length 1 in '/Game/AdvancedTurnBasedTileToolkit/Blueprints/Gameplay/BP_Grid_Manager.BP_Grid_Manager_C:Decide the final target from viable options'!
+[2018.05.30-21.05.13:727][353]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.05.30-21.05.46:621][937]LogEditorViewport: Clicking on Actor (context menu): BP_Grid_Manager_C (BP_Grid_Manager)
+[2018.05.30-21.05.48:263][ 82]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (Sky Sphere)
+[2018.05.30-21.05.49:706][206]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.05.30-21.05.53:513][489]LogEditorViewport: Clicking on Actor (LMB): Tile_Wall_Block_C (Tile_Wall_Block)
+[2018.05.30-21.06.38:216][436]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestLevel" FILE="../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Saved/Autosaves/Game/TestLevel_Auto2.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2018.05.30-21.06.38:325][436]LogSavePackage: Save=100.61ms
+[2018.05.30-21.06.38:325][436]LogSavePackage: Moving '../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Saved/TestLevel_Auto2596CF8C4467DEF0AB4F57B9AAF2D774C.tmp' to '../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Saved/Autosaves/Game/TestLevel_Auto2.umap'
+[2018.05.30-21.06.38:329][436]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Saved/Autosaves/Game/TestLevel_Auto2.umap
+[2018.05.30-21.06.38:331][436]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/TestLevel' took 0.129
+[2018.05.30-21.06.38:331][436]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.129
+[2018.05.30-21.08.34:433][592]LogEditorViewport: Clicking on Actor (LMB): Unit_Player_Melee_C (Unit_Player_Melee2)
+[2018.05.30-21.13.16:556][784]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestLevel" FILE="../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.05.30-21.13.16:679][784]LogSavePackage: Save=100.09ms
+[2018.05.30-21.13.16:679][784]LogSavePackage: Moving '../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Saved/TestLevel2F2093A24CABE5C44F1DD6BF9E8D5A04.tmp' to '../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestLevel.umap'
+[2018.05.30-21.13.16:683][784]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestLevel.umap
+[2018.05.30-21.13.16:761][784]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestLevel_BuiltData" FILE="../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestLevel_BuiltData.uasset" SILENT=true
+[2018.05.30-21.13.16:782][784]LogSavePackage: Save=14.80ms
+[2018.05.30-21.13.16:782][784]LogSavePackage: Moving '../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Saved/TestLevel_BuiltData4FA5D0984DC1C5FDA8409990163B8D96.tmp' to '../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestLevel_BuiltData.uasset'
+[2018.05.30-21.13.16:783][784]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestLevel_BuiltData.uasset
+[2018.05.30-22.46.08:508][113]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestLevel" FILE="../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.05.30-22.46.08:632][113]LogSavePackage: Save=100.60ms
+[2018.05.30-22.46.08:632][113]LogSavePackage: Moving '../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Saved/TestLevel1FA27C3A4BA200ED92D9639CAD4E8B9A.tmp' to '../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestLevel.umap'
+[2018.05.30-22.46.08:633][113]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestLevel.umap
+[2018.05.30-22.46.08:704][113]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestLevel_BuiltData" FILE="../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestLevel_BuiltData.uasset" SILENT=true
+[2018.05.30-22.46.08:723][113]LogSavePackage: Save=12.05ms
+[2018.05.30-22.46.08:723][113]LogSavePackage: Moving '../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Saved/TestLevel_BuiltData64FB71C94BE591E8A34DCBB181A31A92.tmp' to '../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestLevel_BuiltData.uasset'
+[2018.05.30-22.46.08:723][113]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/TestLevel_BuiltData.uasset
+[2018.05.30-22.46.10:413][197]Cmd: QUIT_EDITOR
+[2018.05.30-22.46.10:460][197]LogExit: Preparing to exit.
+[2018.05.30-22.46.11:297][197]LogDirectoryWatcher: A directory notification for 'C:/Users/Andrew/Documents/GitHub/New-Frontier/Content/' was aborted.
+[2018.05.30-22.46.11:363][197]LogExit: Editor shut down
+[2018.05.30-22.46.11:366][197]LogExit: Transaction tracking system shut down
+[2018.05.30-22.46.11:614][197]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2018.05.30-22.46.11:614][197]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Andrew/Documents/GitHub/New-Frontier/Content/' was aborted.
+[2018.05.30-22.46.11:614][197]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2018.05.30-22.46.11:614][197]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Media/MediaCompositing/Content/' was aborted.
+[2018.05.30-22.46.11:614][197]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/AppleARKit/Content/' was aborted.
+[2018.05.30-22.46.11:614][197]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
+[2018.05.30-22.46.11:614][197]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
+[2018.05.30-22.46.11:694][197]LogExit: Object subsystem successfully closed.
+[2018.05.30-22.46.11:714][197]LogD3D11RHI: Shutdown
+[2018.05.30-22.46.11:714][197]LogD3D11RHI: CleanupD3DDevice
+[2018.05.30-22.46.11:716][197]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.05.30-22.46.11:726][197]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (550)
+[2018.05.30-22.46.11:726][197]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (548)
+[2018.05.30-22.46.11:726][197]LogModuleManager: Shutting down and abandoning module SceneOutliner (546)
+[2018.05.30-22.46.11:726][197]LogModuleManager: Shutting down and abandoning module AddContentDialog (544)
+[2018.05.30-22.46.11:727][197]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.18/FeaturePacks/' was aborted.
+[2018.05.30-22.46.11:727][197]LogModuleManager: Shutting down and abandoning module WidgetCarousel (543)
+[2018.05.30-22.46.11:727][197]LogModuleManager: Shutting down and abandoning module EditorWidgets (540)
+[2018.05.30-22.46.11:727][197]LogModuleManager: Shutting down and abandoning module CollectionManager (538)
+[2018.05.30-22.46.11:728][197]LogDirectoryWatcher: A directory notification for 'C:/Users/Andrew/Documents/GitHub/New-Frontier/Content/Collections/' was aborted.
+[2018.05.30-22.46.11:728][197]LogDirectoryWatcher: A directory notification for 'C:/Users/Andrew/Documents/GitHub/New-Frontier/Content/Developers/Andrew/Collections/' was aborted.
+[2018.05.30-22.46.11:728][197]LogDirectoryWatcher: A directory notification for 'C:/Users/Andrew/Documents/GitHub/New-Frontier/Saved/Collections/' was aborted.
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module StatsViewer (536)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module FoliageEdit (534)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module LandscapeEditor (532)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module MeshPaintMode (530)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (528)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module ActorPickerMode (526)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module GeometryMode (524)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module TextureAlignMode (522)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module BspMode (520)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (518)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module HardwareSurvey (516)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (514)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module AutomationWorker (512)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (510)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (508)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module PlacementMode (507)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (504)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (502)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (500)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (498)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (496)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (494)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (492)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (490)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (488)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module CharacterAI (486)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module AudioCapture (484)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module SequenceRecorder (483)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module SmartSnapping (480)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module SessionServices (478)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module ViewportSnapping (476)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module ViewportInteraction (474)
+[2018.05.30-22.46.11:728][197]LogModuleManager: Shutting down and abandoning module ClothPainter (472)
+[2018.05.30-22.46.11:729][197]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (471)
+[2018.05.30-22.46.11:729][197]LogModuleManager: Shutting down and abandoning module LogVisualizer (468)
+[2018.05.30-22.46.11:729][197]LogModuleManager: Shutting down and abandoning module IntroTutorials (466)
+[2018.05.30-22.46.11:729][197]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (465)
+[2018.05.30-22.46.11:729][197]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (462)
+[2018.05.30-22.46.11:729][197]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (460)
+[2018.05.30-22.46.11:729][197]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (458)
+[2018.05.30-22.46.11:729][197]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (457)
+[2018.05.30-22.46.12:333][197]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (454)
+[2018.05.30-22.46.12:333][197]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (452)
+[2018.05.30-22.46.12:333][197]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (450)
+[2018.05.30-22.46.12:333][197]LogModuleManager: Shutting down and abandoning module InputBindingEditor (448)
+[2018.05.30-22.46.12:333][197]LogModuleManager: Shutting down and abandoning module MergeActors (446)
+[2018.05.30-22.46.12:333][197]LogModuleManager: Shutting down and abandoning module SizeMap (444)
+[2018.05.30-22.46.12:333][197]LogModuleManager: Shutting down and abandoning module TreeMap (442)
+[2018.05.30-22.46.12:333][197]LogModuleManager: Shutting down and abandoning module ReferenceViewer (440)
+[2018.05.30-22.46.12:333][197]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (438)
+[2018.05.30-22.46.12:333][197]LogModuleManager: Shutting down and abandoning module LocalizationService (437)
+[2018.05.30-22.46.12:334][197]LogModuleManager: Shutting down and abandoning module HardwareTargeting (434)
+[2018.05.30-22.46.12:334][197]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (432)
+[2018.05.30-22.46.12:334][197]LogModuleManager: Shutting down and abandoning module UndoHistory (430)
+[2018.05.30-22.46.12:334][197]LogModuleManager: Shutting down and abandoning module XmlParser (428)
+[2018.05.30-22.46.12:334][197]LogModuleManager: Shutting down and abandoning module Blutility (426)
+[2018.05.30-22.46.12:334][197]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (424)
+[2018.05.30-22.46.12:334][197]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (423)
+[2018.05.30-22.46.12:334][197]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (420)
+[2018.05.30-22.46.12:334][197]LogModuleManager: Shutting down and abandoning module SettingsEditor (418)
+[2018.05.30-22.46.12:334][197]LogModuleManager: Shutting down and abandoning module ProjectLauncher (416)
+[2018.05.30-22.46.12:335][197]LogModuleManager: Shutting down and abandoning module SessionFrontend (414)
+[2018.05.30-22.46.12:335][197]LogModuleManager: Shutting down and abandoning module ProfilerClient (412)
+[2018.05.30-22.46.12:335][197]LogModuleManager: Shutting down and abandoning module DeviceManager (410)
+[2018.05.30-22.46.12:335][197]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (409)
+[2018.05.30-22.46.12:375][197]LogModuleManager: Shutting down and abandoning module AutomationController (406)
+[2018.05.30-22.46.12:375][197]LogModuleManager: Shutting down and abandoning module AutomationWindow (404)
+[2018.05.30-22.46.12:375][197]LogModuleManager: Shutting down and abandoning module Layers (402)
+[2018.05.30-22.46.12:375][197]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (400)
+[2018.05.30-22.46.12:375][197]LogModuleManager: Shutting down and abandoning module DetailCustomizations (398)
+[2018.05.30-22.46.12:376][197]LogModuleManager: Shutting down and abandoning module PackagesDialog (396)
+[2018.05.30-22.46.12:376][197]LogModuleManager: Shutting down and abandoning module Persona (394)
+[2018.05.30-22.46.12:376][197]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (393)
+[2018.05.30-22.46.12:376][197]LogModuleManager: Shutting down and abandoning module AnimGraph (391)
+[2018.05.30-22.46.12:376][197]LogModuleManager: Shutting down and abandoning module Kismet (388)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module ClassViewer (386)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module Toolbox (384)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module ModuleUI (382)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module MovieSceneTools (380)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module OutputLog (378)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module GammaUI (376)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module Documentation (374)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (372)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module MovieScene (370)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (368)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module LauncherPlatform (366)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module AnalyticsET (364)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module PortalServices (362)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module PortalRpc (360)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module MessagingRpc (358)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module AIModule (356)
+[2018.05.30-22.46.12:410][197]LogModuleManager: Shutting down and abandoning module GameplayDebugger (355)
+[2018.05.30-22.46.12:411][197]LogModuleManager: Shutting down and abandoning module AITestSuite (353)
+[2018.05.30-22.46.12:411][197]LogModuleManager: Shutting down and abandoning module DesktopPlatform (350)
+[2018.05.30-22.46.12:411][197]LogModuleManager: Shutting down and abandoning module ProfilerService (348)
+[2018.05.30-22.46.12:443][197]LogModuleManager: Shutting down and abandoning module TaskGraph (346)
+[2018.05.30-22.46.12:443][197]LogModuleManager: Shutting down and abandoning module SteamVRController (344)
+[2018.05.30-22.46.12:443][197]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (342)
+[2018.05.30-22.46.12:443][197]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (340)
+[2018.05.30-22.46.12:443][197]LogModuleManager: Shutting down and abandoning module OculusInput (338)
+[2018.05.30-22.46.12:443][197]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (336)
+[2018.05.30-22.46.12:443][197]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (334)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module CableComponent (332)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (330)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module AndroidPermission (328)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module ActorSequence (324)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (322)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (320)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module MediaCompositing (318)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module HTML5Networking (316)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module AlembicImporter (314)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module AlembicLibrary (313)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module GeometryCache (312)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (311)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (306)
+[2018.05.30-22.46.12:444][197]LogModuleManager: Shutting down and abandoning module PluginBrowser (304)
+[2018.05.30-22.46.12:445][197]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (302)
+[2018.05.30-22.46.12:445][197]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (300)
+[2018.05.30-22.46.12:445][197]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (298)
+[2018.05.30-22.46.12:445][197]LogModuleManager: Shutting down and abandoning module UObjectPlugin (296)
+[2018.05.30-22.46.12:445][197]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (294)
+[2018.05.30-22.46.12:445][197]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (292)
+[2018.05.30-22.46.12:445][197]LogModuleManager: Shutting down and abandoning module GitSourceControl (290)
+[2018.05.30-22.46.12:445][197]LogModuleManager: Shutting down and abandoning module SourceControl (289)
+[2018.05.30-22.46.12:445][197]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (286)
+[2018.05.30-22.46.12:445][197]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (284)
+[2018.05.30-22.46.12:446][197]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (282)
+[2018.05.30-22.46.12:446][197]LogModuleManager: Shutting down and abandoning module Paper2DEditor (280)
+[2018.05.30-22.46.12:446][197]LogModuleManager: Shutting down and abandoning module MeshPaint (279)
+[2018.05.30-22.46.12:446][197]LogModuleManager: Shutting down and abandoning module LevelEditor (277)
+[2018.05.30-22.46.12:449][197]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (276)
+[2018.05.30-22.46.12:449][197]LogModuleManager: Shutting down and abandoning module MainFrame (274)
+[2018.05.30-22.46.12:449][197]LogModuleManager: Shutting down and abandoning module HotReload (273)
+[2018.05.30-22.46.12:450][197]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (268)
+[2018.05.30-22.46.12:450][197]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (266)
+[2018.05.30-22.46.12:450][197]LogModuleManager: Shutting down and abandoning module PhysXVehicles (264)
+[2018.05.30-22.46.12:450][197]LogModuleManager: Shutting down and abandoning module OculusEditor (262)
+[2018.05.30-22.46.12:450][197]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (260)
+[2018.05.30-22.46.12:450][197]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (258)
+[2018.05.30-22.46.12:450][197]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (256)
+[2018.05.30-22.46.12:451][197]LogModuleManager: Shutting down and abandoning module UdpMessaging (254)
+[2018.05.30-22.46.12:551][197]LogModuleManager: Shutting down and abandoning module TcpMessaging (252)
+[2018.05.30-22.46.12:651][197]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (250)
+[2018.05.30-22.46.12:651][197]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (248)
+[2018.05.30-22.46.12:651][197]LogModuleManager: Shutting down and abandoning module FacialAnimation (246)
+[2018.05.30-22.46.12:651][197]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (244)
+[2018.05.30-22.46.12:651][197]LogModuleManager: Shutting down and abandoning module GraphEditor (243)
+[2018.05.30-22.46.12:652][197]LogModuleManager: Shutting down and abandoning module ContentBrowser (241)
+[2018.05.30-22.46.12:655][197]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (238)
+[2018.05.30-22.46.12:655][197]LogModuleManager: Shutting down and abandoning module Paper2D (236)
+[2018.05.30-22.46.12:655][197]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (234)
+[2018.05.30-22.46.12:655][197]LogModuleManager: Shutting down and abandoning module WmfMedia (232)
+[2018.05.30-22.46.12:657][197]LogModuleManager: Shutting down and abandoning module ImgMedia (230)
+[2018.05.30-22.46.12:657][197]LogModuleManager: Shutting down and abandoning module PacketHandler (228)
+[2018.05.30-22.46.12:657][197]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (226)
+[2018.05.30-22.46.12:657][197]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (224)
+[2018.05.30-22.46.12:658][197]LogModuleManager: Shutting down and abandoning module MediaAssets (222)
+[2018.05.30-22.46.12:658][197]LogModuleManager: Shutting down and abandoning module Media (221)
+[2018.05.30-22.46.12:664][197]LogModuleManager: Shutting down and abandoning module Overlay (218)
+[2018.05.30-22.46.12:664][197]LogModuleManager: Shutting down and abandoning module OverlayEditor (217)
+[2018.05.30-22.46.12:664][197]LogModuleManager: Shutting down and abandoning module VREditor (214)
+[2018.05.30-22.46.12:664][197]LogModuleManager: Shutting down and abandoning module StringTableEditor (212)
+[2018.05.30-22.46.12:664][197]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (210)
+[2018.05.30-22.46.12:665][197]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (208)
+[2018.05.30-22.46.12:665][197]LogModuleManager: Shutting down and abandoning module FunctionalTesting (206)
+[2018.05.30-22.46.12:665][197]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (204)
+[2018.05.30-22.46.12:665][197]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (203)
+[2018.05.30-22.46.12:665][197]LogModuleManager: Shutting down and abandoning module UMG (200)
+[2018.05.30-22.46.12:665][197]LogModuleManager: Shutting down and abandoning module UMGEditor (199)
+[2018.05.30-22.46.12:665][197]LogModuleManager: Shutting down and abandoning module Sequencer (198)
+[2018.05.30-22.46.12:665][197]LogModuleManager: Shutting down and abandoning module MessageLog (195)
+[2018.05.30-22.46.12:665][197]LogModuleManager: Shutting down and abandoning module SlateReflector (190)
+[2018.05.30-22.46.12:666][197]LogModuleManager: Shutting down and abandoning module Slate (188)
+[2018.05.30-22.46.12:666][197]LogModuleManager: Shutting down and abandoning module EditorStyle (186)
+[2018.05.30-22.46.12:673][197]LogModuleManager: Shutting down and abandoning module MRMesh (184)
+[2018.05.30-22.46.12:673][197]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (182)
+[2018.05.30-22.46.12:673][197]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (180)
+[2018.05.30-22.46.12:673][197]LogModuleManager: Shutting down and abandoning module XAudio2 (178)
+[2018.05.30-22.46.12:673][197]LogModuleManager: Shutting down and abandoning module Networking (176)
+[2018.05.30-22.46.12:674][197]LogModuleManager: Shutting down and abandoning module Core (172)
+[2018.05.30-22.46.12:674][197]LogModuleManager: Shutting down and abandoning module LevelSequence (168)
+[2018.05.30-22.46.12:674][197]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (166)
+[2018.05.30-22.46.12:675][197]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
+[2018.05.30-22.46.12:675][197]LogModuleManager: Shutting down and abandoning module MeshUtilities (162)
+[2018.05.30-22.46.12:675][197]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (161)
+[2018.05.30-22.46.12:675][197]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (160)
+[2018.05.30-22.46.12:675][197]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (159)
+[2018.05.30-22.46.12:675][197]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (157)
+[2018.05.30-22.46.12:676][197]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (155)
+[2018.05.30-22.46.12:676][197]LogModuleManager: Shutting down and abandoning module MaterialBaking (151)
+[2018.05.30-22.46.12:676][197]LogModuleManager: Shutting down and abandoning module DerivedDataCache (148)
+[2018.05.30-22.46.12:775][197]LogDerivedDataCache: Shutdown
+[2018.05.30-22.46.12:775][197]LogModuleManager: Shutting down and abandoning module TargetPlatform (146)
+[2018.05.30-22.46.12:775][197]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (145)
+[2018.05.30-22.46.12:775][197]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (143)
+[2018.05.30-22.46.12:775][197]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (141)
+[2018.05.30-22.46.12:775][197]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (139)
+[2018.05.30-22.46.12:775][197]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (137)
+[2018.05.30-22.46.12:776][197]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (135)
+[2018.05.30-22.46.12:776][197]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (133)
+[2018.05.30-22.46.12:776][197]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (131)
+[2018.05.30-22.46.12:776][197]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (129)
+[2018.05.30-22.46.12:776][197]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (127)
+[2018.05.30-22.46.12:776][197]LogModuleManager: Shutting down and abandoning module ImageWrapper (126)
+[2018.05.30-22.46.12:776][197]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (123)
+[2018.05.30-22.46.12:776][197]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (121)
+[2018.05.30-22.46.12:776][197]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (119)
+[2018.05.30-22.46.12:776][197]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (117)
+[2018.05.30-22.46.12:776][197]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (115)
+[2018.05.30-22.46.12:776][197]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (113)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (111)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (109)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (107)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module Messaging (105)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (103)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (101)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (99)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (97)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (95)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (93)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (91)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (89)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (87)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (85)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (83)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (81)
+[2018.05.30-22.46.12:777][197]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (79)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (77)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (75)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (73)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (71)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (69)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (67)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module InputCore (64)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module Settings (62)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module PhysXCooking (60)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module SteamVR (58)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module OculusHMD (56)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (54)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module AppleARKit (52)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module AugmentedReality (51)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2018.05.30-22.46.12:778][197]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2018.05.30-22.46.12:779][197]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2018.05.30-22.46.12:779][197]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2018.05.30-22.46.12:779][197]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.05.30-22.46.12:779][197]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BAF54705F-48A4-D55A-43E8-92BEF9150C46%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.18.3-3832480%2B%2B%2BUE4%2BRelease-4.18&UserID=0bfca43f4e15aabf67f08788866883a3%7Cdda55b2de4d84906baa563e5147bfe40%7Caf2cc612-44c4-437e-adf1-2f713ed56c80&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.05.30-22.46.12:790][197]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2018.05.30-22.46.12:794][197]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2018.05.30-22.46.12:794][197]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2018.05.30-22.46.12:794][197]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2018.05.30-22.46.12:794][197]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2018.05.30-22.46.12:795][197]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2018.05.30-22.46.12:795][197]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2018.05.30-22.46.12:795][197]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2018.05.30-22.46.12:797][197]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2018.05.30-22.46.12:797][197]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2018.05.30-22.46.12:797][197]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2018.05.30-22.46.12:797][197]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2018.05.30-22.46.12:797][197]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2018.05.30-22.46.12:797][197]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2018.05.30-22.46.12:797][197]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2018.05.30-22.46.12:797][197]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2018.05.30-22.46.12:797][197]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.05.30-22.46.12:797][197]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.05.30-22.46.12:797][197]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.05.30-22.46.12:806][197]LogExit: Exiting.
+[2018.05.30-22.46.12:841][197]Log file closed, 05/30/18 18:46:12
